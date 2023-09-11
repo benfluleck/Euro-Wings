@@ -1,0 +1,19 @@
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--primaryColor);
+  transition: 0.3s border-color;
+  height: 45px;
+}
+
+.input-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  flex: 2;
+
+  label {
+    font-size: 1rem;
+    align-self: flex-start;
+  }
+}

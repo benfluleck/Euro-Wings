@@ -1,0 +1,28 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font: Roboto, sans-serif;
+  --textColor: #374961;
+  --linkActiveColor: #41b783;
+  --buttonColor: #ff6347;
+  --backgroundWhite: #fff;
+  --primaryColor: #e8e8e8;
+  --primaryBlack: #3c414d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primaryColor);
+  color: var(--primaryBlack);
+  font-family:
+    Francois One,
+    Helvetica,
+    Arial,
+    sans-serif !important;
+  font-size: 1.2rem;
+}
