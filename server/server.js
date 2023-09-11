@@ -14,7 +14,7 @@ app.use(cors());
 setGlobalMiddleware(app);
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
-app.use('/api/v1/price-offers', async (req, res) => {
+app.use('/api/v1/priceoffers', async (req, res) => {
   res.send(mockData);
 });
 

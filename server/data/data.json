@@ -9,7 +9,7 @@
       "amount": "128.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "5:23"
   },
@@ -23,7 +23,7 @@
       "amount": "118.56",
       "currency": "USD"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "10:23"
   },
@@ -37,7 +37,7 @@
       "amount": "108.00",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -51,7 +51,7 @@
       "amount": "134.52",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "1:30"
   },
@@ -65,7 +65,7 @@
       "amount": "128.26",
       "currency": "USD"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "3:32"
   },
@@ -79,7 +79,7 @@
       "amount": "152.96",
       "currency": "USD"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "10:12"
   },
@@ -93,7 +93,7 @@
       "amount": "138.42",
       "currency": "USD"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "09:18"
   },
@@ -107,7 +107,7 @@
       "amount": "128.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "09:08"
   },
@@ -121,7 +121,7 @@
       "amount": "146.48",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:32"
   },
@@ -135,7 +135,7 @@
       "amount": "135.48",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -149,7 +149,7 @@
       "amount": "178.23",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -163,7 +163,7 @@
       "amount": "189.34",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -177,7 +177,7 @@
       "amount": "135.23",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -191,7 +191,7 @@
       "amount": "111.23",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -205,7 +205,7 @@
       "amount": "128.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -233,7 +233,7 @@
       "amount": "128.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -247,7 +247,7 @@
       "amount": "118.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -261,7 +261,7 @@
       "amount": "122.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -275,7 +275,7 @@
       "amount": "123.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -289,7 +289,7 @@
       "amount": "125.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -303,7 +303,7 @@
       "amount": "129.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -317,7 +317,7 @@
       "amount": "126.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -331,7 +331,7 @@
       "amount": "127.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -345,7 +345,7 @@
       "amount": "128.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -359,7 +359,7 @@
       "amount": "169.21",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -373,7 +373,7 @@
       "amount": "147.91",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -387,7 +387,7 @@
       "amount": "135.79",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -401,7 +401,7 @@
       "amount": "123.45",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -415,7 +415,7 @@
       "amount": "156.34",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -429,7 +429,7 @@
       "amount": "148.26",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -443,7 +443,7 @@
       "amount": "173.98",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -457,7 +457,7 @@
       "amount": "116.78",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -471,7 +471,7 @@
       "amount": "114.38",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -485,7 +485,7 @@
       "amount": "115.34",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -499,7 +499,7 @@
       "amount": "128.86",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -513,7 +513,7 @@
       "amount": "132.45",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -527,7 +527,7 @@
       "amount": "136.94",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   },
@@ -541,7 +541,7 @@
       "amount": "123.45",
       "currency": "EUR"
     },
-    "offerType": "BestPrice",
+    "offerType": "amadeusBestPrice",
     "uuid": "SA00003-b790715d-b2b8-4d23-ac27-d4e88c0e84af",
     "duration": "12:10"
   }
