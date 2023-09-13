@@ -1,9 +1,10 @@
+select,
 input {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid var(--primaryColor);
+  border: 1px solid var(--borderColor);
   transition: 0.3s border-color;
-  height: 45px;
+  height: 40px;
 }
 
 .input-container {

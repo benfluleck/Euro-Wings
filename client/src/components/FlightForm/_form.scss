@@ -1,0 +1,26 @@
+#home {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 330px) {
+    align-items: flex-start;
+  }
+
+  .row {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    flex-flow: row nowrap;
+    width: 100%;
+
+    @media (max-width: 560px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.container {
+  padding: 4rem;
+}

@@ -1,63 +1,89 @@
 <template>
-  <form id="home">
+  <div id="home">
     <div class="row">
-      <TextInput v-model="event.depatureAirport" name="depatureAirport" label="Depature airport" />
-      <TextInput v-model="event.destinationAirport" label="Destination airport" />
+      <SelectTextInput
+        :selected-options="departureAirportOptions"
+        label="Departure airport"
+        name="origin"
+        :value="form.origin"
+        @change="selectChanged"
+      />
+      <SelectTextInput
+        :selected-options="destinationAirportOptions"
+        label="Destination airport"
+        name="destination"
+        :value="form.destination"
+        @change="selectChanged"
+      />
     </div>
     <div class="row">
-      <DateInput v-model="event.outDate" :label="`Outgoing flight`" />
-      <DateInput v-model="event.returnDate" :label="`Return flight`" />
-      <SubmitButton :label="`Submit Flights`" />
+      <DateInput :label="`Outgoing flight`" />
+      <DateInput :label="`Return flight`" />
+      <FormButton label="Search for flight" @click="handleSubmit" />
     </div>
-    <pre>{{ event }}</pre>
-  </form>
+  </div>
 </template>
 
 <script>
-import TextInput from '@components/TextInput/TextInput';
+import SelectTextInput from '@components/SelectTextInput/SelectTextInput';
 import DateInput from '@components/DateInput/DateInput';
-import SubmitButton from '@components/SubmitButton/SubmitButton.vue';
+import FormButton from '@components/FormButton/FormButton';
 
 export default {
   components: {
-    TextInput,
+    SelectTextInput,
     DateInput,
-    SubmitButton
+    FormButton
   },
+  props: {
+    departureAirportOptions: {
+      type: Array,
+      default: () => []
+    },
+    departureValue: {
+      type: String,
+      default: ''
+    },
+
+    originValue: {
+      type: String,
+      default: ''
+    },
+
+    destinationAirportOptions: {
+      type: Array,
+      default: () => []
+    }
+  },
+  emits: { handleFormSubmit: null },
   data() {
     return {
-      event: {
-        destinationAirport: '',
-        depatureAirport: '',
-        outDate: '',
-        returnDate: ''
+      form: {
+        origin: '',
+        destination: ''
       }
     };
+  },
+
+  created() {
+    this.form.origin = this.$route.query.origin;
+    this.form.destination = this.$route.query.destination;
+  },
+
+  methods: {
+    selectChanged({ value, name }) {
+      console.log(name, value);
+      if (name) {
+        this.form[name] = value;
+      }
+    },
+    handleSubmit() {
+      this.$emit('handleFormSubmit', this.form);
+    }
   }
 };
 </script>
 
 <style lang="scss">
-#home {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-
-  .row {
-    display: flex;
-    gap: 12px;
-    margin-top: 12px;
-    flex-flow: row nowrap;
-    width: 100%;
-
-    @media (max-width: 560px) {
-      flex-wrap: wrap;
-    }
-  }
-}
-
-.container {
-  padding: 4rem;
-}
+@import '../FlightForm/_form.scss';
 </style>

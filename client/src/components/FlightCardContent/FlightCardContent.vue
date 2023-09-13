@@ -31,28 +31,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card-content {
-  .header {
-    font-size: 0.8rem;
-  }
-
-  .content {
-    font-size: 1.4rem;
-    font-weight: 700;
-  }
-}
-
-.large-content {
-  justify-self: flex-start;
-}
-
-@media (max-width: 680px) {
-  .large-content {
-    justify-self: auto;
-  }
-}
-
-.small-font {
-  font-size: 1rem !important;
-}
+@import '../FlightCardContent/_cardcontent.scss';
 </style>
