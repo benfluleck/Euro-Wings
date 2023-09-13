@@ -1,28 +1,13 @@
 <template>
-  <div id="app">
-    <div class="container">
-      <FlightForm />
-      <FlightCard />
-    </div>
-
-    {{ flights }}
-  </div>
+  <HomePage />
 </template>
 
-<script setup>
-import FlightCard from '@components/FlightCard/FlightCard.vue';
-import FlightForm from '@components/FlightForm/FlightForm.vue';
-import { useFetch } from '@utils/useFetch';
+<script>
+import HomePage from '@pages/HomePage';
 
-const { data: flights, isLoading } = useFetch('/api/v1/priceoffers');
-</script>
-
-<style lang="scss">
-.container {
-  padding: 4rem;
-
-  @media (max-width: 680px) {
-    padding: 1rem;
+export default {
+  components: {
+    HomePage
   }
-}
-</style>
+};
+</script>

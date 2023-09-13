@@ -14,6 +14,7 @@ module.exports = {
       vue$: 'vue/dist/vue.runtime.esm-bundler.js',
       '@': path.resolve(__dirname, 'client/src'),
       '@components': path.resolve(__dirname, 'client/src/components'),
+      '@pages': path.resolve(__dirname, 'client/src/pages'),
       '@utils': path.resolve(__dirname, 'client/src/utils'),
       '@assets': path.resolve(__dirname, 'client/src/assets')
     },
