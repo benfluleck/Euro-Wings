@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import FlightCardContent from '@components/FlightCardContent/FlightCardContent';
+import FlightCardContent from '@components/FlightCardContent/FlightCardContent.vue';
 import { getTime } from '@utils/utils';
 
 export default {

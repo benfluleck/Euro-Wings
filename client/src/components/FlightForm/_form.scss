@@ -1,4 +1,4 @@
-#home {
+#form {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -14,6 +14,31 @@
     margin-top: 12px;
     flex-flow: row nowrap;
     width: 100%;
+
+    .button {
+      background: var(--buttonColor);
+      border: 1px solid var(--buttonColor);
+      border-radius: 8px;
+      padding: 0 32px;
+      color: var(--backgroundWhite);
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      line-height: 56px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex: 2;
+
+      @media (max-width: 630px) {
+        flex: 1;
+      }
+    }
+
+    .button:hover {
+      background: var(--buttonColor);
+      color: var(--backgroundWhite);
+    }
 
     @media (max-width: 560px) {
       flex-wrap: wrap;

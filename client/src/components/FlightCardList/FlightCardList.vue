@@ -17,7 +17,7 @@
 import FlightCard from '../FlightCard/FlightCard.vue';
 
 export default {
-  components: { FlightCard, FlightCard },
+  components: { FlightCard },
   props: {
     flights: {
       type: Array,

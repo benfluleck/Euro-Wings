@@ -2,7 +2,6 @@
   <div class="input-container">
     <label :for="name"> {{ label }} </label>
     <select
-      v-if="selectedOptions.length"
       :id="name"
       :name="name"
       :value="value"
