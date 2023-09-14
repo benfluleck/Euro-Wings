@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import path from 'path';
-import mockData from './data/data.json';
+import mockData from './data/data';
 import setGlobalMiddleware from './middleware/setGlobalMiddleware';
 
 dotenv.config();

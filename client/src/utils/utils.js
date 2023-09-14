@@ -2,20 +2,17 @@ import { ref } from 'vue';
 import axios from 'axios';
 
 export const useFetch = (url, config = {}) => {
-  const data = ref(null);
-  const response = ref(null);
+  const data = ref([]);
   const error = ref(null);
   const isLoading = ref(false);
 
-  const fetchFlights = async () => {
+  const request = async () => {
     isLoading.value = true;
     try {
       const result = await axios.request({
         url,
         ...config
       });
-
-      response.value = result;
       data.value = result.data;
     } catch (ex) {
       error.value = ex;
@@ -23,9 +20,9 @@ export const useFetch = (url, config = {}) => {
       isLoading.value = false;
     }
   };
-  fetchFlights();
+  request();
 
-  return { response, error, data, isLoading, fetchFlights };
+  return { error, data, isLoading };
 };
 
 export const getTime = (date) => {
@@ -38,7 +35,7 @@ export const getTime = (date) => {
   );
 };
 
-export const filterFlights = (data, query = {}) => {
+export const filterFlights = (data = [], query = {}) => {
   return data.filter((rec) =>
     Object.entries(query).every(([k, v]) => rec[k].toString().includes(v))
   );

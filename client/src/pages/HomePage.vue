@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <div class="container">
+      <p v-if="isLoading">App Loading. Please be patient</p>
+      <p v-else-if="error && flights.length === 0" class="error">
+        Error while fetching flight data. Please Check your server connection
+      </p>
       <FlightForm
-        v-if="flights"
+        v-else
         :origin-value="origin"
         :destination-value="destination"
         :departure-airport-options="getCities(flights, 'origin')"
@@ -25,18 +29,27 @@ export default {
     FlightCardList
   },
 
-  setup() {
-    const { data: flights, isLoading, error } = useFetch('/api/v1/priceoffers');
-
-    return { flights, isLoading };
-  },
-
   data() {
     return {
-      filteredFlights: [],
       origin: '',
-      destination: ''
+      destination: '',
+      flights: [],
+      error: 'something',
+      isLoading: false
     };
+  },
+
+  computed: {
+    filteredFlights() {
+      return filterFlights(this.flights, this.$route.query);
+    }
+  },
+
+  mounted() {
+    const { data: flights, isLoading, error } = useFetch('/api/v1/priceoffers');
+    this.isLoading = isLoading;
+    this.flights = flights;
+    this.error = error;
   },
 
   methods: {
@@ -52,7 +65,6 @@ export default {
             ...form
           }
         });
-        this.filteredFlights = filterFlights(this.flights, form);
       }
     }
   }
@@ -62,6 +74,13 @@ export default {
 <style lang="scss">
 .container {
   padding: 4rem;
+
+  .error {
+    color: var(--dangerColor);
+  }
+  p {
+    font-size: 1rem;
+  }
 
   @media (max-width: 680px) {
     padding: 1rem;

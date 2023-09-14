@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <form id="form" @submit.prevent="handleSubmit">
     <div class="row">
       <SelectTextInput
         :selected-options="departureAirportOptions"
@@ -15,25 +15,17 @@
         :value="form.destination"
         @change="selectChanged"
       />
+      <button class="button" type="submit">Search for flight</button>
     </div>
-    <div class="row">
-      <DateInput :label="`Outgoing flight`" />
-      <DateInput :label="`Return flight`" />
-      <FormButton label="Search for flight" @click="handleSubmit" />
-    </div>
-  </div>
+  </form>
 </template>
 
 <script>
-import SelectTextInput from '@components/SelectTextInput/SelectTextInput';
-import DateInput from '@components/DateInput/DateInput';
-import FormButton from '@components/FormButton/FormButton';
+import SelectTextInput from '@components/SelectTextInput/SelectTextInput.vue';
 
 export default {
   components: {
-    SelectTextInput,
-    DateInput,
-    FormButton
+    SelectTextInput
   },
   props: {
     departureAirportOptions: {
@@ -55,7 +47,7 @@ export default {
       default: () => []
     }
   },
-  emits: { handleFormSubmit: null },
+  emits: { 'handle-form-submit': null },
   data() {
     return {
       form: {
@@ -72,13 +64,12 @@ export default {
 
   methods: {
     selectChanged({ value, name }) {
-      console.log(name, value);
       if (name) {
         this.form[name] = value;
       }
     },
     handleSubmit() {
-      this.$emit('handleFormSubmit', this.form);
+      this.$emit('handle-form-submit', this.form);
     }
   }
 };
